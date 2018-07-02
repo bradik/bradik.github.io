@@ -2,14 +2,9 @@
 <html>
 <head>
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link
-            rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
-    >
-    <link
-            rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"
-    >
+    <link href="static/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="static/js/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
     <style>
         .box1 {
             background: rgba(203, 209, 211, .3);
@@ -24,6 +19,7 @@
         }
     </style>
     <title>Резюме</title>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter49015610 = new Ya.Metrika({ id:49015610, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/49015610" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -42,14 +38,28 @@
         </div>
         <div class="col-md-6">
             <h3 id="personalName">Яковлев Родион Владимирович</h3>
-            <div>Мужчина, родился 4 декабря 1975</div>
+            <div>Мужчина, родился 4 декабря 1975 г.</div>
             <div>Санкт-Петербург,
                 <span style="color: red">м. Ладожская</span><span></span>
             </div>
             <p></p>
-            <div>+79119765740</div>
-            <div>
-                <a href="mailto:bradnm@ya.ru" itemprop="email">bradnm@ya.ru</a>- предпочитаемый способ связи
+            <div class="container" style="padding-left: 0px">
+                <div class="row">
+                    <div class="col-md-1">Телефон:</div>
+                    <div class="col-md-5">+79119765740</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1">Email:</div>
+                    <div class="col-md-5">
+                        <a href="mailto:bradnm@ya.ru" target="">bradnm@ya.ru</a> - предпочитаемый способ связи
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <a href="https://github.com/bradik" target="_blank">GitHub account</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -63,10 +73,12 @@
             <li>Программирование, Разработка</li>
         </ul>
     </div>
-    <p>Занятость: полная занятость, частичная занятость, проектная работа</p>
-    <p>График работы: полный день</p>
+    <p>Занятость:
+        полная занятость, частичная занятость, проектная работа</p>
+    <p>График работы:
+        полный день</p>
     <div>
-        <h4 id="experiences" data-start="2007-09">Опыт работы </h4>
+        <h4 id="experiences" data-start="2007-09">Опыт работы</h4>
     </div>
     <div class="row" style="margin-top: 15px">
         <div class="col-md-3">
@@ -76,25 +88,31 @@
             <div class="bloko-column bloko-column_s-6 bloko-column_m-7 bloko-column_l-10">
                 <div>
                     <h4>Reksoft</h4>
-                    <a href="http://www.reksoft.com/ru/" target="_blank">http://www.reksoft.com/ru/</a>
+                    <p>
+                        <span><a href="http://www.reksoft.com/ru/" target="_blank">http://www.reksoft.com/ru/</a></span>
+                    </p>
                 </div>
-                <b>Программист</b>
-
+                <div>Программист</div>
                 <div>
-                    <div>
-                        Участие в проекте по разработке новой функциональной подсистемы для ЕФС крупного банка.
-                        Разработка на всех этапах проекта:
+                    <lu>
+                        <div> Участие в проекте по разработке новой функциональной подсистемы для ЕФС крупного банка.
+                        </div>
+
+                        <div> Разработка на всех этапах проекта:</div>
+
                         <li>разработка новой функциональности</li>
 
                         <li>рефакторинг кода</li>
 
                         <li>написание unit тестов</li>
-                        Используемые технологии:
+
+                        <div> Используемые технологии:</div>
+
                         <li>Java EE, Spring, Maven, Hibernate, Oracle, TestNG, Mockito</li>
 
                         <li>Websphere, Jetty, nginx, Bitbucket, Sonar, Jenkins,Jira</li>
 
-                    </div>
+                    </lu>
                 </div>
             </div>
         </div>
@@ -113,9 +131,13 @@
                 </div>
                 <div>Программист</div>
                 <div>
-                    <div>
-                        Участие в разработке Spring/JPA Enterprise приложения c авторизацией и правами доступа на основе
-                        ролей на стеке: Maven, Spring MVC, Spring Security, REST (Jackson), Java 8 Stream API:
+                    <lu>
+                        <div> Участие в разработке Spring/JPA Enterprise приложения c авторизацией и правами доступа на
+                            основе ролей
+                        </div>
+
+                        <div> на стеке: Maven, Spring MVC, Spring Security, REST (Jackson), Java 8 Stream API:</div>
+
                         <li>реализация сохранения в базы Postgres и HSQLDB на основе Spring JBDC, JPA(Hibernate) и
                             Spring-Data-JPA
                         </li>
@@ -124,7 +146,7 @@
 
                         <li>реализация клиента на Bootstrap (css/js), datatables, jQuery + plugins.</li>
 
-                    </div>
+                    </lu>
                 </div>
             </div>
         </div>
@@ -144,8 +166,12 @@
                 <div>Программист-разработчик</div>
                 <div>
                     <div>
-                        Доработка существующей учетной системы под нужды предприятия. Решение задач по автоматизации
-                        различных областей работы компании.
+                        <div> Доработка существующей учетной системы под нужды предприятия. Решение задач по
+                            автоматизации
+                        </div>
+
+                        <div> различных областей работы компании.</div>
+
                     </div>
                 </div>
             </div>
@@ -166,8 +192,10 @@
                 <div>Программист-разработчик</div>
                 <div>
                     <div>
-                        Участие в разнообразных проектах компании по решению задач автоматизации бизнеса на базе системы
-                        1С.
+                        <div> Участие в разнообразных проектах компании по решению задач автоматизации бизнеса на базе
+                            системы 1С.
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -188,9 +216,16 @@
                 <div>Программист-разработчик</div>
                 <div>
                     <div>
-                        Разработка и сопровождение распределенных информационных систем компании. Разработка и внедрение
-                        нового функционала. Обмены данными в различных форматах. Интеграция со сторонними ИС. Решение
-                        задач в сфере управленческого и бухгалтерского учета.
+                        <div> Разработка и сопровождение распределенных информационных систем компании. Разработка и
+                            внедрение
+                        </div>
+
+                        <div> нового функционала. Обмены данными в различных форматах. Интеграция со сторонними ИС.
+                            Решение задач
+                        </div>
+
+                        <div> в сфере управленческого и бухгалтерского учета.</div>
+
                     </div>
                 </div>
             </div>
@@ -243,12 +278,14 @@
         <div>
             <h5>Личные качества:</h5>
         </div>
-        <ul>
+        <lu>
             <li>Серьезно отношусь к работе. Умею сконцентрироваться на задаче и получить положительный результат. Люблю
                 решать сложные задачи.
             </li>
+
             <li>Ответственный, исполнительный, легко обучаемый, неконфликтный. Люблю работать в команде.</li>
-        </ul>
+
+        </lu>
     </div>
     <div class="row" style="shape-margin: 15px">
         <div>
@@ -339,16 +376,14 @@
         <div>
             <h4>Гражданство, время в пути до работы</h4>
         </div>
-        <p>Гражданство: Россия</p>
-        <p>Желательное время в пути до работы: не имеет значения</p>
+        <p>Гражданство:
+            Россия</p>
+        <p>Желательное время в пути до работы:
+            не имеет значения</p>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+<script src="static/js/jquery/jquery.js"></script>
+<script src="static/js/bootstrap/bootstrap.min.js"></script>
 <script src="static/js/moment/moment.js"></script>
 <script src="static/js/moment/locale/ru.js"></script>
 <script src="static/js/main.js"></script>
@@ -358,5 +393,9 @@
         $('#myModal').modal('show');
     });
 </script>
+
+c.yandex.ru/watch/49015610" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 </body>
 </html>
